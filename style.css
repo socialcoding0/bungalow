@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+
+
+/* GENERAL */
+body {
+    min-height: 200vh;
+    font-size: 16px;
+    font-family: 'Bellota', cursive;
+    background-color: rgba(245, 245, 245, .8);
+}
+
+img {
+    object-fit: cover;
+}
+
+.bg-general {
+    /* background-color: rgba(19, 117, 71, .3); */
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.bg-second {
+    background-color: rgba(245, 245, 245, .8);
+}
+
+.bg-third {
+    background-color: rgba(13, 40, 24, .5);
+    backdrop-filter: blur(5px);
+}
+
+.fs-1 {
+    font-size: 1rem;
+}
+
+.fs-1-1 {
+    font-size: 1.1rem;
+}
+
+.fs-1-2 {
+    font-size: 1.2rem;
+}
+
+.border-b {
+    border-bottom: 3px solid #0d2818;
+}
+
+.border-l {
+    border-left: 10px solid #0d2818 !important;
+}
+
+.border-l-t-first {
+    border-left: 10px solid whitesmoke !important;
+}
+
+.border-r {
+    border-right: 10px solid #0d2818 !important;
+}
+
+
+.text-first {
+    color: whitesmoke !important;
+}
+
+.text-first:hover {
+    color: #fff !important;
+}
+
+.text-second {
+    /* color: rgb(19, 117, 71); */
+    color: #0d2818;
+}
+
+.text-third {
+    color: #0d2818;
+}
+
+
+/*SLİDER*/
+
+.carousel-inner {
+    background-color: rebeccapurple;
+}
+
+.carousel-item {
+    min-height: 500px !important;
+    max-height: 100vh !important;
+
+}
+
+.carousel-item>img {
+    /* min-height: 500px !important;
+    max-height: 100vh !important; */
+
+    height: 100vh;
+}
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.container>h2 {
+    width: fit-content;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+
+#about-us,
+#activity,
+#s-s-s,
+#contact {
+    padding-top: 6rem !important;
+
+
+}
+
+#about-us .container,
+#activity .container,
+#s-s-s .container,
+#contact .container {
+    max-width: 1100px;
+    gap: 5rem;
+}
+
+#activity img {
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 1);
+}
+
+
+
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: rgba(245, 245, 245, .8);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #0d2818;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+#contact i {
+    font-size: 1.5rem;
+}
+
+.social>span i {
+    font-size: 1.8rem !important;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+    #activity img {
+        max-width: none;
+    }
+}
