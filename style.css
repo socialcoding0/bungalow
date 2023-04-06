@@ -103,9 +103,7 @@ img {
 
 /*SLİDER*/
 
-.carousel-inner {
-    background-color: rebeccapurple;
-}
+.carousel-inner {}
 
 .carousel-item {
     min-height: 500px !important;
