@@ -6,27 +6,33 @@ const smallGalleryArr = [
 
     {
         src: "./img/rooms/room-1.jpg",
-        info: "lorem 1"
+        info: "lorem 1",
+        alt: "room-1"
     },
     {
         src: "./img/rooms/room-2.jpg",
-        info: "lorem 2"
+        info: "lorem 2",
+        alt: "room-2"
     },
     {
         src: "./img/rooms/room-3.jpg",
-        info: "lorem 3"
+        info: "lorem 3",
+        alt: "room-3"
     },
     {
         src: "./img/rooms/room-4.jpg",
-        info: "lorem 4"
+        info: "lorem 4",
+        alt: "room-4"
     },
     {
         src: "./img/rooms/room-5.jpg",
-        info: "lorem 5"
+        info: "lorem 5",
+        alt: "room-5"
     },
     {
         src: "./img/rooms/room-6.jpg",
-        info: "lorem 6"
+        info: "lorem 6",
+        alt: "room-6"
     },
 
 
@@ -40,7 +46,7 @@ for (let smallImageArr of smallGalleryArr) {
 
     let smallDiv = `
     <div class="image">
-<img src="${smallImageArr.src}">   
+<img src="${smallImageArr.src}" alt="${smallGalleryArr.alt}">   
     </div>
     `;
 
@@ -65,7 +71,7 @@ for (let smallImageArr of smallGalleryArr) {
             if (arrSrc == imgSrc) {
 
                 let mainImg = `
-                <img src="${arrSrc}">
+                <img src="${smallImageArr.src}" alt="${smallImageArr.alt}">
                 `;
 
                 let mainInfo = `
